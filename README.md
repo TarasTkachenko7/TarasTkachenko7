@@ -2,6 +2,14 @@
 
 ###
 
+<div data-importer="socials" align="center">
+<a href="https://t.me/TarTkach" target="_blank">
+  <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="telegram logo" />
+</a>
+</div>
+
+###
+
 <div data-importer="image" align="center">
   <img data-importer="image" height="660" src="https://i.gifer.com/Nv2.gif"  />
 </div>
@@ -37,18 +45,6 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" height="60" alt="android logo"  />
 </div>
-
-###
-
-<div data-importer="socials" align="center">
-  <a href="mailto:fartuch.kek@gmail.com">
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo" />
-</a>
-  <img src="https://img.shields.io/static/v1?message=Telegram&logo=telegram&label=&color=2CA5E0&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="telegram logo"  />
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
-</div>
-
-###
 
 <br clear="both">
 
