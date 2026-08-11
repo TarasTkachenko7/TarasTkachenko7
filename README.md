@@ -155,9 +155,5 @@
 ### Activity
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders.svg">
-    <img alt="Space Invaders Animation" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders.svg">
-  </picture>
+  <img alt="Space Shooter Animation" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-space-shooter.gif" width="100%">
 </div>
