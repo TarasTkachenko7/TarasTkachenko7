@@ -156,8 +156,8 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/main/profile-3d-contrib/profile-night-view.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/main/profile-3d-contrib/profile-green-animate.svg">
-    <img alt="3D GitHub Contribution Graph" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/main/profile-3d-contrib/profile-night-view.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders.svg">
+    <img alt="Space Invaders Animation" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-space-invaders.svg">
   </picture>
 </div>
