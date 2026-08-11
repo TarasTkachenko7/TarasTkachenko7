@@ -1,36 +1,31 @@
 name: Generate Space Invaders Animation
 
 on:
-  # Запуск каждые 24 часа
   schedule:
-    - cron: "0 0 * * *" 
-  
-  # Возможность запустить вручную
+    - cron: "0 0 * * *"
   workflow_dispatch:
-  
-  # Запуск при пуше в основную ветку
   push:
     branches:
-    - main
-    - master
+      - main
+      - master
 
 jobs:
-  generate:
-    permissions: 
-      contents: write
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    name: generate-space-invaders
+    permissions:
+      contents: write
     steps:
-      - name: generate github-contribution-grid-space-invaders.svg
-        uses: Platane/snk/svg-only@v3
+      - uses: actions/checkout@v3
+
+      - uses: jrowberg/github-profile-space-invaders@v1.0.0
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-space-invaders.svg
-            dist/github-contribution-grid-space-invaders-dark.svg?palette=github-dark
+            dist/github-contribution-grid-space-invaders-dark.svg?theme=dark
 
-      - name: push github-contribution-grid-space-invaders.svg to the output branch
+      - name: push github-contribution-grid-space-invaders.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
