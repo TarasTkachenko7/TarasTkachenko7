@@ -1,4 +1,4 @@
-name: Generate Space Invaders Animation
+name: Generate Space Shooter Animation
 
 on:
   schedule:
@@ -12,23 +12,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: generate-space-invaders
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - uses: jrowberg/github-profile-space-invaders@v1.0.0
+      - name: Generate Space Shooter GIF
+        uses: czl9707/gh-space-shooter@main
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-space-invaders.svg
-            dist/github-contribution-grid-space-invaders-dark.svg?theme=dark
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ github.repository_owner }}
+          output-path: 'github-space-shooter.gif'
 
-      - name: push github-contribution-grid-space-invaders.svg to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Commit & Push GIF to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
