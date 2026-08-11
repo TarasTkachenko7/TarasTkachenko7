@@ -153,7 +153,6 @@
 </table>
 
 ### Activity
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-snake.svg">
