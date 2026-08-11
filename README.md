@@ -154,6 +154,8 @@
 
 ### Activity
 
-<div align="center">
-  <img alt="Space Shooter Animation" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-space-shooter.gif" width="100%">
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/TarasTkachenko7/TarasTkachenko7/output/github-contribution-grid-snake.svg">
+</picture>
