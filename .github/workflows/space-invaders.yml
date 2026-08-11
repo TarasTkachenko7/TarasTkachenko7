@@ -24,12 +24,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: ${{ github.repository_owner }}
           output-path: 'github-space-shooter.gif'
-          push-to-repo: false
-
-      - name: Deploy GIF to output branch
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Update space shooter game GIF'
