@@ -2,20 +2,21 @@ name: Generate Space Shooter Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
+    - cron: "0 0 * * *" # Запуск каждый день в полночь
+  workflow_dispatch:      # Возможность ручного запуска
   push:
     branches:
       - main
       - master
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # Права на запись в репозиторий
+
     steps:
-      - name: Checkout repository
+      - name: Checkout main repository
         uses: actions/checkout@v4
 
       - name: Generate Space Shooter GIF
@@ -24,4 +25,11 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: ${{ github.repository_owner }}
           output-path: 'github-space-shooter.gif'
-          commit-message: 'Update space shooter game GIF'
+
+      - name: Push GIF to output branch
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: output
+          create_branch: true
+          file_pattern: 'github-space-shooter.gif'
+          commit_message: 'Update space shooter game GIF [skip ci]'
