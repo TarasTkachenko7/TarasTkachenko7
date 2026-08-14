@@ -107,8 +107,8 @@
         <td>
           <p align="left" style="margin: 0;">
             <img src="https://cdn.simpleicons.org/junit5/25A162" height="40" alt="JUnit5" />
-            <img src="https://img.shields.io/badge/Mockito-8BC34A?style=for-the-badge" alt="Mockito">
-            <img src="https://img.shields.io/badge/Espresso-3DDC84?&logoColor=black&style=for-the-badge" alt="Espresso">
+            <img src="https://img.shields.io/badge/Mockito-8BC34A?style=for-the-badge" alt="MockK">
+            <img src="https://img.shields.io/badge/Espresso-3DDC84?&logoColor=black&style=for-the-badge" alt="Compose UI Test">
             <img src="https://img.shields.io/badge/Robolectric-E64A19?style=for-the-badge" alt="Robolectric">
             <img src="https://img.shields.io/badge/Detekt_&_Ktlint-7F52FF?&logoColor=white&style=for-the-badge" alt="Linters">
             <img src="https://img.shields.io/badge/LeakCanary-FFEB3B?style=for-the-badge" alt="LeakCanary">
